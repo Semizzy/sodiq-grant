@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .headerHome {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #4caf50;
+            color: white;
+            font-size: 24px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeIn 2s forwards;
+            width: 80%;
+            max-width: 600px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #4caf50;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #f0f0f0;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="headerHome">
+        <div id="headerLogo" class="rib">
+            <img id="headerLogoImg" src="images/images-LogoA.png" alt="Logo">
+        </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="message">
+            Thanks for applying. Your information will be saved on our database now and to verify if you are qualified to receive the grant so that we will not deliver the grant to the wrong person. Remember that Grant money is non-refundable and interest-free. If you qualify for this, your money can be delivered to you without any stress <br> Kindly get in touch with live support for the next step.
+        </div>
+        <div class="buttons">
+            <a href="sms:+19177658529" class="button"> Chat Support (SMS)</a> <br> <br>
+            <a href="mailto:Agentmark827@gmail.com" class="button">Chat Support (E-mail)</a>
+        </div>
+    </div>
+</body>
+</html>
